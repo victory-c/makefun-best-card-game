@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101f29">
+  <title>Lanternwake — A duel before dawn</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='32'%3E✦%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><div class="moon"></div><div class="mountain far"></div><div class="mountain near"></div><div class="water"></div></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="masthead"><a class="wordmark" href="index.html">✦ LANTERNWAKE</a><span class="edition">THE LAST CROSSING · A TACTICAL CARD DUEL</span><button id="sound" class="quiet" aria-label="Toggle sound">Sound off</button><button id="help" class="quiet">How to play <kbd>?</kbd></button></header>
+  <main id="app"></main>
+  <dialog id="rules"><button class="close quiet" aria-label="Close rules">×</button><span class="eyebrow">THE FERRYMAN'S FIELD GUIDE</span><h2>Two cards. Three currents.</h2><p>The Keeper reveals two cards. Read the river, then place two of your five cards on different currents. Click a card, then a current. Click a placed card to recall it.</p><div class="rule-grid"><section><h3>✹ Flare</h3><p>Win to deal 4 hull damage. Each point of power advantage adds 1 damage, up to 3 more.</p></section><section><h3>≈ Haven</h3><p>Win to repair 3 hull and gain 2 guard. Guard absorbs damage and persists until used.</p></section><section><h3>✦ Beacon</h3><p>Win to gather 3 extra light. Every current you win also grants 1 light.</p></section></div><p><strong>Suit circle:</strong> Cinder ✹ beats Reed ❧, Reed beats Tide ≈, Tide beats Cinder. The countering card gains +2 power. Matching suits in your two cards resonate: both gain +1, or +3 for an Echo card.</p><p><strong>Card traits:</strong> Echo (1–2): stronger resonance. Keel (3–4): +1 in Haven. Wild (5–6): raw power. An empty opposing current has 0 power; ties wash out with no reward. Both sides resolve together.</p><p><strong>Win:</strong> reach 14 light or break the Keeper's 24 hull. After 7 crossings, highest light wins; hull breaks a tie. An exact tie favors you. If both cross a victory threshold together, light then hull decides.</p><p class="muted">Keyboard: 1–5 select card · A/S/D choose current · Enter resolve · Esc cancel / close · ? guide · M sound. No timer. No purchases. Everything stays on this device.</p></dialog>
+  <div id="announcer" class="sr-only" aria-live="polite"></div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
